@@ -226,7 +226,7 @@ class Less_Tree_Import extends Less_Tree{
 			}
 
 			// always look in user supplied import directories
-			$import_dirs = array_merge( $import_dirs, Less_Parser::$options['import_dirs'] );
+			$import_dirs = array_merge( Less_Parser::$options['import_dirs'],$import_dirs);
 
 
 			foreach( $import_dirs as $rootpath => $rooturi){
